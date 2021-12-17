@@ -57,7 +57,7 @@ jobs:
         secret-name: ${{ env.REGISTRY_NAME }}-registry-connection
         namespace: ${{ env.NAMESPACE }}
 
-    # Baking the helm chart to generate the manifests to deploy
+    # Baking the helm chart to generate the manifests to deploy.
     - uses: azure/k8s-bake@v1
       with:
         renderEngine: 'helm2'
